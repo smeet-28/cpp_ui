@@ -26,9 +26,6 @@ $(document).ready(function(){
             'orderable': false,  // set orderable false for selected columns
         }],
         'dom': 'Bfrtip',
-        'buttons': [
-            'print', 'excelHtml5', 'csvHtml5', 'pdfHtml5'
-        ],
     });
 
     // Check all 

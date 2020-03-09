@@ -56,7 +56,7 @@
                 <div class="vd_top-nav vd_nav-width  ">
                     <div class="vd_panel-header">
           	            <div class="logo">
-            	            <a href="index.php"><img alt="logo" src="img/logo.png"></a>
+            	            <a href="index.php"><img alt="logo" src="img/download.png"></a>
                         </div>
                         <!-- logo -->
                         <div class="vd_panel-menu  hidden-sm hidden-xs" data-intro="<strong>Minimize Left Navigation</strong><br/>Toggle navigation size to medium or small size. You can set both button or one button only. See full option at documentation." data-step=1>
@@ -163,7 +163,35 @@
             </div><!-- vd_primary-menu-wrapper --> 
             </header><!-- Header Ends --> 
         <div class="content">
-            <div class="container">   
+            <div class="container">  
+            <div class="vd_navbar vd_nav-width vd_navbar-tabs-menu vd_navbar-left  ">
+                        <div class="navbar-menu clearfix">
+                            <h3 class="menu-title hide-nav-medium hide-nav-small">UI Features</h3>
+                            <div class="vd_menu">
+                                <ul>
+                                    <li>
+                                        <a href="tpo-office1.html" data-action="click-trigger">
+                                            <span class="menu-icon"><i class="fa fa-dashboard"></i></span> 
+                                            <span class="menu-text">Criteria Section</span>  
+                                        </a>
+                                    </li>  
+                                    <li>
+                                        <a href="tpo-office-share-files.html" data-action="click-trigger">
+                                            <span class="menu-icon"><i class="fa fa-share-alt"> </i></span> 
+                                            <span class="menu-text">Shared Files</span>  
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="tpo-office-share-files.html" data-action="click-trigger">
+                                            <span class="menu-icon"><i class="fa fa-plus"> </i></span> 
+                                            <span class="menu-text" data-toggle="modal" data-target="#myModal1" id="addAnnouncement">Add Announcement</span>  
+<!--                                             <button class="btn btn-primary" style="float: right" data-toggle="modal" data-target="#myModal1" > Add Announcement </button>-->
+                                        </a>
+                                    </li>    
+                                </ul>
+                            </div>             
+                        </div>
+                    </div>     
             <!-- Middle Content Start -->
             <div class="vd_content-wrapper">
                 <div class="vd_container">
@@ -180,18 +208,14 @@
                             <div class="vd_content-section clearfix">
                                 <div class="row"></div><!-- row --> 
                             </div><!-- .vd_content-section --> 
-                            <button class="btn btn-primary" style="float: right" data-toggle="modal" data-target="#myModal1" id="addAnnouncement"> Add Announcement </button><br><br>    
+                           <br><br>    
                     </div><!-- .vd_content -->
                 
                     <!-- Card -->
-                    <div class="col-sm-14">
+                    <div class="col-sm-11">
                         <div class="panel widget">
                             <div class="panel-heading vd_bg-red ">
                                 <h3 class="panel-title"> <span class="menu-icon"> <i class="fa fa-th-large"></i> </span><?php echo $_GET['name']?></h3>
-                                <div class="vd_panel-menu">
-                                    <div data-action="minimize" data-original-title="Minimize" data-toggle="tooltip" data-placement="bottom" class=" menu entypo-icon "> <i class="fa fa-minus"></i> </div>
-                                    <div data-action="close" data-original-title="Close" data-toggle="tooltip" data-placement="bottom" class=" menu entypo-icon"> <i class="fa fa-times" aria-hidden="true"></i> </div>
-                                </div><!-- vd_panel-menu --> 
                             </div>
                             
                             <div class="panel-body">
@@ -345,7 +369,6 @@
                                                 <label class="col-sm-4 control-label">Any specific Instructions</label>
                                                 <div class="col-sm-6 controls">
                                                 <textarea name="instruction" id="" cols="" rows="5"></textarea>
-<!--                                                    <input class="input-border-btm" type="text" name="instruction">-->
                                                 </div>
                                             </div>
                                             <div class="form-group">
@@ -402,29 +425,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div><!-- Card --> 
-                    
-                    <!-- Card 2.0-->
-                    <div class="col-sm-14">
-                        <div class="panel widget">
-                            <div class="panel-heading vd_bg-red ">
-                                <h3 class="panel-title"> <span class="menu-icon"> <i class="fa fa-th-large"></i> </span><?php echo $_GET['name']?></h3>
-                                <div class="vd_panel-menu">
-                                    <div data-action="minimize" data-original-title="Minimize" data-toggle="tooltip" data-placement="bottom" class=" menu entypo-icon "> <i class="fa fa-minus"></i> </div>
-                                    <div data-action="close" data-original-title="Close" data-toggle="tooltip" data-placement="bottom" class=" menu entypo-icon"> <i class="fa fa-times" aria-hidden="true"></i> </div>
-                                </div><!-- vd_panel-menu --> 
-                            </div>
-                            <div class="panel-body">
-                                <div class="col-sm-10">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non voluptatum eos reprehenderit eius quis, dicta odit laudantium. Officiis minus repellat architecto sapiente quae! Deserunt fuga explicabo, maiores ut incidunt debitis?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam eius voluptatum assumenda eligendi mollitia, error magnam ipsam ullam eos praesentium soluta esse sint unde odio minus quidem qui delectus aspernatur.</p>
-                                    <!--Comapny details Table-->
-                                    <div class="col-md-12" id="displayCompanyDetails">
-                                       
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- Card --> 
+                    </div>
+                    <!-- Card --> 
                 </div><!-- .vd_container --> 
         </div><!-- .vd_content-wrapper --> 
         <!-- Middle Content End --> 
@@ -882,20 +884,6 @@ $(document).on('click', '#btn_add', function(){
         
 </script>
 <!-- Specific Page Scripts END -->
-
-<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information. -->
-
-<!--<script>
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-XXXXX-X']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-</script> -->
 
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>TPO Office 1</title>
+        <title>TPO Office - Share files</title>
 
         <!-- Fav and touch icons -->
         <link rel="shortcut icon" href="img/ico/favicon.png">
@@ -172,13 +172,14 @@
                             <div class="vd_menu">
                                 <ul>
                                     <li>
-                                        <a href="tpo-office1.html" data-action="click-trigger">
+                                        <a href="" data-action="click-trigger">
                                             <span class="menu-icon"><i class="fa fa-dashboard"></i></span> 
                                             <span class="menu-text">Criteria Section</span>  
+                                            
                                         </a>
                                     </li>  
                                     <li>
-                                        <a href="tpo-office-share-files.html" data-action="click-trigger">
+                                        <a href="javascript:void(0);" data-action="click-trigger">
                                             <span class="menu-icon"><i class="fa fa-share-alt"> </i></span> 
                                             <span class="menu-text">Shared Files</span>  
                                         </a>
@@ -187,125 +188,58 @@
                             </div>             
                         </div>
                     </div>    
-
+                    
                     <!-- Middle Content Start -->
                     <div class="vd_content-wrapper">
                         <div class="vd_container">
                             <div class="vd_content clearfix">
                                 <div class="vd_head-section clearfix">
                                     <div class="vd_panel-header">
-                                        <div class="vd_panel-menu hidden-sm hidden-xs" data-intro="<strong>Expand Control</strong><br/>To expand content page horizontally, vertically, or Both. If you just need one button just simply remove the other button code." data-step=5  data-position="left">
-                                            <div data-action="remove-navbar" data-original-title="Remove Navigation Bar Toggle" data-toggle="tooltip" data-placement="bottom" class="remove-navbar-button menu"> <i class="fa fa-arrows-h"></i> </div>
-                                            <div data-action="remove-header" data-original-title="Remove Top Menu Toggle" data-toggle="tooltip" data-placement="bottom" class="remove-header-button menu"> <i class="fa fa-arrows-v"></i> </div>
-                                            <div data-action="fullscreen" data-original-title="Remove Navigation Bar and Top Menu Toggle" data-toggle="tooltip" data-placement="bottom" class="fullscreen-button menu"> <i class="glyphicon glyphicon-fullscreen"></i> </div>
+                                    <div class="vd_panel-menu hidden-sm hidden-xs" data-intro="<strong>Expand Control</strong><br/>To expand content page horizontally, vertically, or Both. If you just need one button just simply remove the other button code." data-step=5  data-position="left">
+                                    <div data-action="remove-navbar" data-original-title="Remove Navigation Bar Toggle" data-toggle="tooltip" data-placement="bottom" class="remove-navbar-button menu"> <i class="fa fa-arrows-h"></i> </div>
+                                    <div data-action="remove-header" data-original-title="Remove Top Menu Toggle" data-toggle="tooltip" data-placement="bottom" class="remove-header-button menu"> <i class="fa fa-arrows-v"></i> </div>
+                                    <div data-action="fullscreen" data-original-title="Remove Navigation Bar and Top Menu Toggle" data-toggle="tooltip" data-placement="bottom" class="fullscreen-button menu"> <i class="glyphicon glyphicon-fullscreen"></i> </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                    <div class="vd_title-section clearfix">
+                                        <div class="vd_panel-header">
+                                            <h1>CompanyName Details </h1>
+                                        </div><br>
+                                    </div>
+                                <div class="vd_content-section clearfix">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="panel widget">
+                                                <div class="panel-heading vd_bg-grey">
+                                                    <h3 class="panel-title"> <span class="menu-icon"> <i class="fa fa-dot-circle-o"></i> </span> Data Tables </h3>
+                                                </div>
+                                                <div class="panel-body table-responsive">
+                                                    <table class="table table-striped" id="data-tables">
+                                                        <thead>
+                                                            <tr>
+                                                              <th>Sr. No.</th>
+                                                              <th>File Name</th>
+                                                              <th>Date of creation</th>
+                                                              <th>Date of updation</th>
+                                                              <th>
+                                                                <input type="checkbox" class='checkall' id='checkall'>
+                                                                <input type="button" id='delete_record' class="btn btn-outline-danger btn-sm b" value='Share' >
+                                                            </th>
+                                                            </tr>
+                                                        </thead>
+                                                      <tbody></tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                    
-                                <div class="vd_title-section clearfix">
-                                    <div class="vd_panel-header">
-                                      <h1>CompanyName Details </h1>
-                                    </div><br>
-                                    <div class="vd_content-section clearfix">
-                                        <div class="criteria">
-                                            <div class="form-group">
-                                                <label class="col-sm-3 control-label">CGPI</label>
-                                                <div class="col-sm-4 controls">
-                                                    <input type="text" placeholder="CGPI > 6.5" class="width-50">
-                                                </div>
-                                            </div><br><br><br>
-                                            <div class="form-group">
-                                                <label class="col-sm-3 control-label">UG</label>
-                                                <div class="col-sm-7 controls">
-                                                    <div class="vd_checkbox checkbox-danger">
-                                                        <input type="checkbox" value="" id="checkbox-3">
-                                                        <label for="checkbox-3"> COMPS </label>
-                                                        <input type="checkbox" value="" id="checkbox-4">
-                                                        <label for="checkbox-4"> IT </label>
-                                                        <input type="checkbox" value="" id="checkbox-5">
-                                                        <label for="checkbox-5"> ETRX </label>
-                                                        <input type="checkbox" value="" id="checkbox-6">
-                                                        <label for="checkbox-6"> EXTC </label>
-                                                        <input type="checkbox" value="" id="checkbox-7">
-                                                        <label for="checkbox-7"> MECH </label>
-                                                    </div>
-                                                </div>
-                                            </div><br><br><br>
-                                            <div class="form-group">
-                                                <label class="col-sm-3 control-label">PG</label>
-                                                <div class="col-sm-7 controls">
-                                                    <div class="vd_checkbox checkbox-danger">
-                                                        <input type="checkbox" value="" id="checkbox-8">
-                                                        <label for="checkbox-8"> COMPS </label>
-                                                        <input type="checkbox" value="" id="checkbox-9">
-                                                        <label for="checkbox-9"> IS </label>
-                                                        <input type="checkbox" value="" id="checkbox-10">
-                                                        <label for="checkbox-10"> ETRX </label>
-                                                        <input type="checkbox" value="" id="checkbox-11">
-                                                        <label for="checkbox-11"> EXTC </label>
-                                                        <input type="checkbox" value="" id="checkbox-12">
-                                                        <label for="checkbox-12"> EE </label>
-                                                    </div>
-                                                </div>
-                                            </div><br><br><br>
-                                            <div class="form-group">
-                                                <label class="col-sm-3 control-label">Company Status</label>
-                                                <div class="col-sm-7 controls">
-                                                    <select class="width-40">
-                                                    <option>Super Dream</option>
-                                                    <option>Dream</option>
-                                                    <option>Non Dream</option>
-                                                    <option>Dream &amp; Non Dream</option>
-                                                    </select>
-                                                </div>
-                                            </div><br><br>
-                                            <div class="form-group">
-                                                <label class="col-sm-3 control-label">Upload CSV</label>
-                                            
-                                                <div class="input-group">
-                                                    <div class="custom-file">
-                                                        <input type="file" class="custom-file-input" id="inputGroupFile01"
-                                                          aria-describedby="inputGroupFileAddon01">
-                                                        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <button class="btn btn-primary " data-toggle="modal" data-target="" id="" type="file"> Submit</button><br><br>
-                                        </div>
-                                        
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="panel widget">
-                                                    <div class="panel-heading vd_bg-grey">
-                                                        <h3 class="panel-title"> <span class="menu-icon"> <i class="fa fa-dot-circle-o"></i> </span> Data Tables </h3>
-                                                    </div>
-                                                    <div class="panel-body table-responsive">
-                                                        <table class="table table-striped" id="empTable">
-                                                            <thead>
-                                                                <tr>
-                                                                  <th>ID</th>
-                                                                    <th>Roll No</th>
-                                                                    <th>Student Name</th>
-                                                                    <th>Department</th>
-                                                                    <th>Course</th>
-                                                                    <th><input type="checkbox" class='checkall' id='checkall'>
-                                                                        <input type="button" id='delete_record' class="btn btn-outline-danger btn-sm b" value='Delete' >
-                                                                    </th>
-                                                                </tr>
-                                                            </thead>
-                                                          <tbody></tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </div><!-- col-md-12 --> 
-                                        </div><!-- row --> 
-                                    </div><!-- .vd_content-section --> 
-                                </div><!-- .vd_content --> 
-                            </div><!-- .vd_container --> 
-                        </div><!-- .vd_content-wrapper --> 
+                            </div>
+                        </div>
+                    </div><!-- .vd_content-wrapper --> 
                     <!-- Middle Content End --> 
-                </div><!-- .container --> 
-            </div><!-- .content -->
+                </div><!-- .content -->
             </div><!--vd_body-->
 
         <!-- .vd_body END  -->

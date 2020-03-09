@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
     <head>
         <meta charset="utf-8" />
         <title>TPO Page</title>
@@ -38,17 +37,23 @@
 
         <!-- Responsive CSS -->
         <link href="css/theme-responsive.min.css" rel="stylesheet" type="text/css"> 
-
+        
+        <!-- Custome Style -->
+        <link rel="stylesheet" href="css/custom-style.css">
+        
         <!-- Head SCRIPTS -->
         <script type="text/javascript" src="js/modernizr.js"></script> 
         <script type="text/javascript" src="js/mobile-detect.min.js"></script> 
         <script type="text/javascript" src="js/mobile-detect-modernizr.js"></script> 
+        
+     
+        
     </head>    
 
-<body id="pages" class="full-layout  nav-right-hide nav-right-start-hide  nav-top-fixed      responsive    clearfix" data-active="pages "  data-smooth-scrolling="1">     
-<div class="vd_body">
-<!-- Header Start -->
-    <header class="header-1" id="header">
+    <body id="pages" class="full-layout  nav-right-hide nav-right-start-hide  nav-top-fixed      responsive    clearfix" data-active="pages "  data-smooth-scrolling="1">     
+        <div class="vd_body">
+            <!-- Header Start -->
+            <header class="header-1" id="header">
         <div class="vd_top-menu-wrapper">
             <div class="container ">
                 <div class="vd_top-nav vd_nav-width  ">
@@ -160,12 +165,39 @@
                 </div><!-- container --> 
             </div><!-- vd_primary-menu-wrapper --> 
         </header><!-- Header Ends --> 
-        <div class="content">
-            <div class="container">   
-            <!-- Middle Content Start -->
-            <div class="vd_content-wrapper">
-                <div class="vd_container">
-                    <div class="vd_content clearfix">
+            <div class="content">
+                <div class="container">
+                    <div class="vd_navbar vd_nav-width vd_navbar-tabs-menu vd_navbar-left  ">
+                        <div class="navbar-menu clearfix">
+                            <h3 class="menu-title hide-nav-medium hide-nav-small">UI Features</h3>
+                            <div class="vd_menu">
+                                <ul>
+                                    <li>
+                                        <a href="tpo-office1.html" data-action="click-trigger">
+                                            <span class="menu-icon"><i class="fa fa-dashboard"></i></span> 
+                                            <span class="menu-text">Criteria Section</span>  
+                                        </a>
+                                    </li>  
+                                    <li>
+                                        <a href="tpo-office-share-files.html" data-action="click-trigger">
+                                            <span class="menu-icon"><i class="fa fa-share-alt"> </i></span> 
+                                            <span class="menu-text">Shared Files</span>  
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-action="click-trigger" data-toggle="modal" data-target="#myModal">
+                                            <span class="menu-icon"><i class="fa fa-plus"> </i></span> 
+                                            <span class="menu-text">Add Company</span>  
+                                        </a>
+                                    </li>  
+                                </ul>
+                            </div>             
+                        </div>
+                    </div>       
+                    <!-- Middle Content Start -->
+                    <div class="vd_content-wrapper">
+                        <div class="vd_container">
+                            <div class="vd_content clearfix">
                         <div class="vd_head-section clearfix">
                             <div class="vd_panel-header">
                                 <div class="vd_panel-menu hidden-sm hidden-xs" data-intro="<strong>Expand Control</strong><br/>To expand content page horizontally, vertically, or Both. If you just need one button just simply remove the other button code." data-step=5  data-position="left">
@@ -184,8 +216,6 @@
                         <div class="vd_content-section clearfix">
                         <div class="row">
                             <div class="col-sm-10">
-                                <button class="btn btn-primary " data-toggle="modal"  type="submit"  data-target="#myModal"> Add Company </button><br/>
-                                
                                 <!-- Modal -->
                                 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                     <div class="modal-dialog">
@@ -217,18 +247,23 @@
                     </div><!-- .vd_content-section -->     
                 </div><!-- .vd_content -->
                 
-                <!-- Card -->
-                <div class="col-sm-6" data-rel="sortable" id="myCard"></div><!-- Card --> 
-                
+                            <!-- Card -->
+                            <div class="col-sm-10">
+                                <div class="col-sm-6" data-rel="sortable" id="myCard">
+                                    
+                                </div>
+                            </div>
+                            <!-- Card -->  
+    
                  
                 
-            </div><!-- .vd_container --> 
-        </div><!-- .vd_content-wrapper --> 
-        <!-- Middle Content End --> 
-    </div><!-- .container --> 
-</div><!-- .content -->
+                        </div><!-- .vd_container --> 
+                    </div><!-- .vd_content-wrapper --> 
+                    <!-- Middle Content End --> 
+                </div><!-- .container --> 
+            </div><!-- .content -->
 
-<div class="vd_chat-menu hidden-xs">
+            <div class="vd_chat-menu hidden-xs">
     <div class="vd_mega-menu-wrapper">
         <div class="vd_mega-menu">
             <ul class="mega-ul"> 
@@ -364,160 +399,143 @@
 </div>   
 </div>      
 </div>
-</div>
+        </div>
 
-<!-- .vd_body END  -->
-<a id="back-top" href="#" data-action="backtop" class="vd_back-top visible"> <i class="fa  fa-angle-up"> </i> </a>
+        <!-- .vd_body END  -->
+        <a id="back-top" href="#" data-action="backtop" class="vd_back-top visible"> <i class="fa  fa-angle-up"> </i> </a>
 
+        <!-- Javascript  --> 
+        <!-- Placed at the end of the document so the pages load faster --> 
+        <script type="text/javascript" src="js/jquery.js"></script> 
+        <script type="text/javascript" src="js/bootstrap.min.js"></script> 
+        <script type="text/javascript" src='plugins/jquery-ui/jquery-ui.custom.min.js'></script>
+        <script type="text/javascript" src="plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
 
+        <script type="text/javascript" src="js/caroufredsel.js"></script> 
+        <script type="text/javascript" src="js/plugins.js"></script>
 
-<!--<a class="back-top" href="#" id="back-top"> <i class="icon-chevron-up icon-white"> </i> </a> -->
+        <script type="text/javascript" src="plugins/breakpoints/breakpoints.js"></script>
+        <script type="text/javascript" src="plugins/dataTables/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.js"></script> 
 
-<!-- Javascript  --> 
-<!-- Placed at the end of the document so the pages load faster --> 
-<script type="text/javascript" src="js/jquery.js"></script> 
-<script type="text/javascript" src="js/bootstrap.min.js"></script> 
-<script type="text/javascript" src='plugins/jquery-ui/jquery-ui.custom.min.js'></script>
-<script type="text/javascript" src="plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+        <script type="text/javascript" src="plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script type="text/javascript" src="plugins/tagsInput/jquery.tagsinput.min.js"></script>
+        <script type="text/javascript" src="plugins/bootstrap-switch/bootstrap-switch.min.js"></script>
+        <script type="text/javascript" src="plugins/blockUI/jquery.blockUI.js"></script>
+        <script type="text/javascript" src="plugins/pnotify/js/jquery.pnotify.min.js"></script>
 
-<script type="text/javascript" src="js/caroufredsel.js"></script> 
-<script type="text/javascript" src="js/plugins.js"></script>
-
-<script type="text/javascript" src="plugins/breakpoints/breakpoints.js"></script>
-<script type="text/javascript" src="plugins/dataTables/jquery.dataTables.min.js"></script>
-<script type="text/javascript" src="plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.js"></script> 
-
-<script type="text/javascript" src="plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-<script type="text/javascript" src="plugins/tagsInput/jquery.tagsinput.min.js"></script>
-<script type="text/javascript" src="plugins/bootstrap-switch/bootstrap-switch.min.js"></script>
-<script type="text/javascript" src="plugins/blockUI/jquery.blockUI.js"></script>
-<script type="text/javascript" src="plugins/pnotify/js/jquery.pnotify.min.js"></script>
-
-<script type="text/javascript" src="js/theme.js"></script>
-<script type="text/javascript" src="custom/custom.js"></script>
+        <script type="text/javascript" src="js/theme.js"></script>
+        <script type="text/javascript" src="custom/custom.js"></script>
  
-<!-- Specific Page Scripts Put Here -->
-<script type="text/javascript" src="plugins/isotope/isotope.pkgd.min.js"></script>
+        <!-- Specific Page Scripts Put Here -->
+        <script type="text/javascript" src="plugins/isotope/isotope.pkgd.min.js"></script>
 
 
-<script type="text/javascript">
-$(document).ready(function() {
-	"use strict";
-		
-  // init Isotope
-  var $container = $('.isotope').isotope({
-    itemSelector: '.gallery-item',
-    layoutMode: 'fitRows'
-  });
-  
+        <script type="text/javascript">
+        $(document).ready(function() {
+            "use strict";
 
-	$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-	  $container.isotope('layout');
-	});
+          // init Isotope
+          var $container = $('.isotope').isotope({
+            itemSelector: '.gallery-item',
+            layoutMode: 'fitRows'
+          });
 
-  // bind filter button click
-  $('#filters').on( 'click', 'a', function() {
-    var filterValue = $( this ).attr('data-filter');
-	$('#filters li').removeClass('active');
-	$(this).parent().addClass('active');	
-    $container.isotope({ filter: filterValue });
-  });
-    
-    
-    show_for_entry(); 
-        function show_for_entry(){
+
+            $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+              $container.isotope('layout');
+            });
+
+          // bind filter button click
+          $('#filters').on( 'click', 'a', function() {
+            var filterValue = $( this ).attr('data-filter');
+            $('#filters li').removeClass('active');
+            $(this).parent().addClass('active');	
+            $container.isotope({ filter: filterValue });
+          });
+
+
+            show_for_entry(); 
+                function show_for_entry(){
+                    $.ajax({
+                        url   : 'select.php',
+                        type  : 'POST',
+                        async : 'false',
+                        datatype : 'json',
+                        data : {
+                            'check' : 1
+                          },
+                        success : function(response){
+                            var data = JSON.parse(response);
+                            if(data.msg == 'success')
+                            {
+                                show_card();       
+                            }    
+                        }
+                    });
+                };
+
+            function show_card()
+            {
+                  $.ajax({
+                        url   : 'select.php',
+                        type  : 'POST',
+                        async : 'false',
+                        datatype : 'json',
+                        data : {
+                            'card' : 1
+                          },
+                        success : function(response){
+                            var i;
+                            var data = JSON.parse(response);
+                            for(i=0; i < data.length ; i++){
+                                Math.random()*16777215
+                                var html = '<div class="panel widget">'+
+                                                '<div class="panel-heading vd_bg-red ">'+
+                                                    '<h3 class="panel-title"> <span class="menu-icon"> <i class="fa fa-th-large"></i></span>'+ data[i].companyName +'</h3>'+'<br>'+ 
+                                                    '<div class="vd_panel-menu">'+
+                                                        '<div data-action="close" data-original-title="Close" data-toggle="tooltip" data-placement="bottom" class=" menu entypo-icon"> <i class="fa fa-times" aria-hidden="true"></i> </div>'+
+                                                    '</div><!-- vd_panel-menu -->'+ 
+                                                    '<a href="tpo-details.php?id='+data[i].id+'&name='+data[i].companyName+'" id="clickHere" style="color: white; font-weight: bolder; font-size: larger; padding-bottom: 50px; margin-bottom: 50px;"> More Details <i class="fa fa-angle-double-right"> </i></a>'+
+                                                '</div><!-- panel-heading vd_bg-red -->'+
+                                            '</div><!-- panel widget -->';
+                                $('#myCard').append(html);
+                            }
+                        }
+
+                    });
+            }
+
+           /* $(document).on('click','#clickHere',function(){
+                alert("yes going");   
+            });*/
+
+
+        });
+
+            //add company   into the database and call show_card(); 
+            $(document).on('click', '#btn_add', function(){
+            var company_name = $('#company_name').val();
             $.ajax({
-                url   : 'select.php',
-                type  : 'POST',
-                async : 'false',
-                datatype : 'json',
-                data : {
-                    'check' : 1
-                  },
-                success : function(response){
-                    var data = JSON.parse(response);
-                    if(data.msg == 'success')
-                    {
-                        show_card();       
-                    }    
-                }
+              url: 'insert.php',
+              type: 'POST',
+              data: {
+                'save': 1,  
+                'company_name': company_name,
+              },
+              success: function(response){
+                $('#company_name').val('');
+                $('#myModal').modal('hide');
+                  location.reload();
+                show_card(company_name);
+              }
             });
-        };
-    
-    function show_card()
-    {
-          $.ajax({
-                url   : 'select.php',
-                type  : 'POST',
-                async : 'false',
-                datatype : 'json',
-                data : {
-                    'card' : 1
-                  },
-                success : function(response){
-                    var i;
-                    var data = JSON.parse(response);
-                    for(i=0; i < data.length ; i++){
-                      var html = '<div class="panel widget">'+
-                                '<div class="panel-heading vd_bg-red ">'+
-                                    '<h3 class="panel-title"> <span class="menu-icon"> <i class="fa fa-th-large"></i></span>'+ data[i].companyName +'</h3>'+
-                                    '<div class="vd_panel-menu">'+
-                                    '<div data-action="minimize" data-original-title="Minimize" data-toggle="tooltip" data-placement="bottom" class=" menu entypo-icon "> <i class="fa fa-minus"></i> </div>'+
-                                    '<div data-action="close" data-original-title="Close" data-toggle="tooltip" data-placement="bottom" class=" menu entypo-icon"> <i class="fa fa-times" aria-hidden="true"></i> </div>'+
-                                    '</div><!-- vd_panel-menu -->'+ 
-                                '</div>'+'<a href="tpo-details.php?id='+data[i].id+'&name='+data[i].companyName+'" id="clickHere"> Click Here <i class="fa  fa-angle-double-right"> </i></a>'
-                            '</div>';
-                        $('#myCard').append(html);
-                    }
-                }
- 
-            });
-    }
-    
-   /* $(document).on('click','#clickHere',function(){
-        alert("yes going");   
-    });*/
+          });
 
-	
-});
-    
-    //add company   into the database and call show_card(); 
-    $(document).on('click', '#btn_add', function(){
-    var company_name = $('#company_name').val();
-    $.ajax({
-      url: 'insert.php',
-      type: 'POST',
-      data: {
-        'save': 1,  
-        'company_name': company_name,
-      },
-      success: function(response){
-        $('#company_name').val('');
-        $('#myModal').modal('hide');
-          location.reload();
-        show_card(company_name);
-      }
-    });
-  });
-    
-   /* $("a").click(function(){
-        alert("yes going");   
-    });*/
-</script>
-<!-- Specific Page Scripts END -->
-
-<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information. -->
-
-<!--<script>
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-XXXXX-X']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-</script> -->
-</body>
+           /* $("a").click(function(){
+                alert("yes going");   
+            });*/
+        </script>
+        <!-- Specific Page Scripts END -->
+    </body>
 </html>
